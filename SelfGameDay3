@@ -1,0 +1,208 @@
+#Programmer: Stephanie Byrne
+#Date: 8.06.2020 - day 2/ Day 3 - 9.06/ Day 4 - 10.06
+#File: SelfGameDraft.py
+
+#PLOT: Essentially it is a 12 Question (maybe 10) survey that produces a journal like entry in text doc.
+# Future development: Advice for the next day, how I can get dates as input and separate them as 3 integer,
+# clothing, activity with list and scale....
+#TOMORROW: Fav Season would be good to associated with the days temp
+# + Make b_month the t_month or t_day...
+
+#ASK PHIL:
+b_day = int(input("What is the day of birth? "))
+b_month = input("What is your month of birth? ")
+b_month = b_month.lower()
+t_day = int(input("What day of the month is it? "))
+t_month = input("What month is it? ")
+t_month = t_month.lower()
+d_week = input("What day of the week is it? ")
+d_week = d_week.lower()
+temp = int(input("What is the temperature today? (just the number in celsius) "))
+#fav_sea = input("What is your favorite season? ")
+#fav_sea = fav_sea.lower()
+#work = input("Did you work today? ")
+#work = work.lower()
+#people = int(input("How many people did you interact with today? "))
+message = ""
+week = ""
+heat = ""
+
+if b_month == "december":
+    if b_day < 17:
+        star = "when ya like people, over there"
+    else:
+        star = "when you just want to break free"
+elif b_month == "january":
+    if b_day < 18:
+        star = "when you have weird questions but need answers"
+    else:
+        star = "when you want to get to the point"
+elif b_month == "february":
+    if b_day < 15:
+        star = "when you know how it can all go wrong"
+    else:
+        star = "when you spend to long analysing"
+elif b_month == "march":
+    if b_day < 11:
+        star = "when you don't get what the fuss is about"
+    else:
+        star = "when you just want to day dream and try something fun"
+elif b_month == "april":
+    if b_day < 18:
+       star = "when all you want to do is help"
+    else:
+        star = "when you know it's time to lead"
+elif b_month == "may":
+    if b_day < 13:
+        star = "when your passion becomes obsession"
+    else:
+        star = "when you don't want things to change"
+elif b_month == "june":
+    if b_day < 19:
+        star = "when you have it all going for you but who notices"
+    else:
+        star = "when ya ready to go but where to go"
+elif b_month == "july":
+    if b_day < 21:
+        star = "when you jump at all opportunities that come your way"
+    else:
+        star = "when you are conscious of those around you"
+elif b_month == "august":
+    if b_day < 9:
+        star = "when you feel the pain of those around you"
+    else:
+        star = "when you give so much more than you take"
+elif b_month == "september":
+    if b_day < 15:
+        star = "when people are looking up to you, the pressure"
+    else:
+        star = "when you seem to be the only one working their hardest"
+elif b_month == "october":
+    if b_day < 30:
+        star = "when your patience and kindness don't seem to be enough"
+    else:
+        star = "when your stuck in the middle"
+elif b_month == "november":
+    if b_day < 22:
+       star = "when you see the light and have to explain it to everyone"
+    else:
+        star = "when you keep putting it off, again and again"
+
+if t_month == "december":
+    if t_day < 17:
+        message += "Time to build on your visions. You never know who may notice!"
+    else:
+        message += "You are optimistic now. Adventures will satisfy your philosophical questions!"
+elif t_month == "january":
+    if t_day < 18:
+        message += "You are being a little too honest and a little too rebellious. Use that energy for good!"
+    else:
+        message += "You are seeing whats real, that focus can leave you uptight."
+elif t_month == "february":
+    if t_day < 15:
+        message += "You might be a little sensitive and quite dry with your reactions of late."
+    else:
+        message += "You might need to distance yourself and look a little deeper."
+elif t_month == "march":
+    if t_day < 11:
+        message += "Might be best to just go with the flow!"
+    else:
+        message += "Your imagination is running wild. All the Romance and life's pleasures."
+elif t_month == "april":
+    if t_day < 18:
+       message += "At the end of the day, you are happy to help and think fondly of others!"
+    else:
+        message += "You are confident and direct which can be intimidating."
+elif t_month == "may":
+    if t_day < 13:
+        message += "You can get frustrated with distractions now, stay motivated!"
+    else:
+        message += "You kinda have it all going for you, stability and staying practical."
+elif t_month == "june":
+    if t_day < 19:
+        message += "You have the right idea, let it grow, don't hold onto old ideas."
+    else:
+        message += "You stay on top of any situation, eventually!"
+elif t_month == "july":
+    if t_day < 21:
+        message += "You are ready to go but make better choices, for your sake."
+    else:
+        message += "You have a deep understanding of those around you."
+elif t_month == "august":
+    if t_day < 9:
+        message += "You stay loyal and people may rely on your intuition."
+    else:
+        message += "Generosity and honest makes you a great leader."
+elif t_month == "september":
+    if t_day < 15:
+        message += "People will notice you, how could they not."
+    else:
+        message += "You have worked hard and are becoming quite reliable."
+elif t_month == "october":
+    if t_day < 30:
+        message += "Your patience will bring out something beautifully creative in you."
+    else:
+        message += "You are stuck in the middle of it. It's your answer they want!"
+elif t_month == "november":
+    if t_day < 22:
+       message += "You know what is fair and how to stay positive. People like that about you."
+    else:
+        message += "You are feeling brave. Honest and loyal. Aim High!"
+
+if d_week == "monday":
+    week += "on the the worst day of all, Monday!"
+elif d_week == "tuesday":
+    week += "on a Tuesday, so the week has only just started!"
+elif d_week == "wednesday":
+    week += "and slap bang in the middle of the week!"
+elif d_week == "thursday":
+    week += "and you kinda want it to end, just another Thursday!"
+elif d_week == "friday":
+    week += ", it's a Friday. When you just want to do your thing!"
+elif d_week == "saturday":
+    week += "on a Saturday! Like you just want to enjoy your day!"
+elif d_week == "sunday":
+    week += "and maybe you just want to relax, It's a Sunday!"
+else:
+    week += "on a day that won't end!!!"
+
+if temp <= 10:
+    heat += "And it's just too cold to function."
+elif temp <= 20:
+    heat += "And the weather seems nice till your in it"
+elif temp <= 30:
+    heat += "And it's so nice outside today"
+elif temp <= 35:
+    heat += "And it's heating up so much that you can barely sleep"
+else:
+    heat += "The weather outside is just unacceptable"
+
+import random
+tarot_list = ["you have a Fresh Start, umm... watch your step!",
+              "you are dealing with a Big Change, careful of those around you!",
+              "You are wise, so teach others.",
+              "you are feeling that Vitality, one with nature type vibe.",
+              "You are coming into your power!",
+              "you can get stuck in Tradition, routine and old habits - shake it up a bit!",
+              "you will be Partnering up for something today.",
+              "keep Charging forward, keeping your focus narrow.",
+              "you are Rising above it today, take control!", "Secrets are being revealed to you, mmmm do tell!",
+              "you keep going Round and Round, when will this cycle end?!?",
+              "you seem to find that Balance and provide harmony.",
+              "Your stuck in your head, gain a new perspective.",
+              "you are in the middle of a Transition, a rebirth of sorts. It ends so something can begin!",
+              "you need to let stuff go. Purification. Past is past!",
+              "Temptations are tempting!", "there has been some Sudden and Unexpected changes.",
+              "your Hope and dreams will be your light!",
+              "Be Cautious, even with your current heightened emotions.",
+              "there's a revelation and that can bring happiness.",
+              "things are looking to be in your Favor, you kinda rule right now.",
+              "something is coming to Completion, so enjoy your rest!"]
+
+
+print("\n\nIt's one of those days", star, week)
+print(heat, ", BUT...", random.choice(tarot_list))
+print(message)
+#print("\nA card and Lucky number has been carefully selected for you.\nEnjoy your day!")
+#print()
+#print(random.choice(tarot_list))
